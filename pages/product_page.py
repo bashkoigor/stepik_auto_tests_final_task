@@ -18,9 +18,11 @@ class ProductPage(BasePage):
     def did_product_add_to_cart(self):
         product = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_CART_INFO)
         product_name = self.get_product_name()
-        assert product.text == product_name, "Product name does not match with product name added to cart."
+        assert product.text == product_name, f"Product name does not match with product name added to cart. " \
+                                             f"{self.browser.current_url}"
 
     def is_price_match(self):
         product = self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE_CART_INFO)
         product_price = self.get_product_price()
-        assert product.text == product_price, "Product price does not match with product price added to cart."
+        assert product.text == product_price, f"Product price does not match with product price added to cart. " \
+                                              f"{self.browser.current_url}"

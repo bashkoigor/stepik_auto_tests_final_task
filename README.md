@@ -1,4 +1,4 @@
-# Автоматизация тестирования с помощью Selenium и Python
-Полноценный тестовый проект, который является финальным заданием к [курсу](https://stepik.org/course/575/syllabus).
+# Test Automation with Selenium and Python
+A full-fledged test project, which is the final task for the [course](https://stepik.org/course/575/syllabus).
 
-[Cертификат об окончании курса](https://stepik.org/cert/1410716)
+[Course Completion Certificate](https://stepik.org/cert/1410716)
